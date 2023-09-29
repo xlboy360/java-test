@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  mysql-development:
+    image: mysql:8.0.17
+    environment:
+      MYSQL_ROOT_PASSWORD: pass
+      MYSQL_DATABASE: testDB
+    ports:
+      - "3306:3306"
